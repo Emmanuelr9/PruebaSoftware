@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VueloApplication<vuelo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.udea.vuelo.VueloApplication",
+            "projectName": "vuelo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
