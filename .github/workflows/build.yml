@@ -67,7 +67,7 @@ jobs:
       - name: Run Tests
 
         run: |
-          cd Pruebas_App_Aerolinea/Front
+          cd Pruebas_App_Aerolinea/Back
           mvn -B test
 
 
