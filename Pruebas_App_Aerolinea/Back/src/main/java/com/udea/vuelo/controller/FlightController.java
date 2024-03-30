@@ -19,6 +19,18 @@ public class FlightController {
     @Autowired
     private FlightService flightService;
 
+
+
+    @GetMapping("/")
+    public String health() {
+        return "Aplicación funcionando correctamente";
+    }
+
+    @GetMapping("/version")
+    public String version() {
+        return "version 1.0.0";
+    }    
+
     //this is the path to search flights between a specific date
     @GetMapping("/search/date")
     public List<Flight> searchFligthsByDate(
