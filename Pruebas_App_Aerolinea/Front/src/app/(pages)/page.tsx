@@ -1,6 +1,8 @@
 import { NavButton } from "@/components/NavButton";
 import ThemeSwitch from "@/components/ThemeSwitch";
 
+
+
 const page = () => {
   return (
     <section className="flex items-center justify-center h-screen">
