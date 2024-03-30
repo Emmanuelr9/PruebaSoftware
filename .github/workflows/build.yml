@@ -67,7 +67,7 @@ jobs:
       - name: Run Tests
 
         run: |
-          cd Pruebas_App_Aerolinea/Back  # Cambiar a la carpeta de la aplicación
+          cd Pruebas_App_Aerolinea/Back
           mvn -B test
 
 
