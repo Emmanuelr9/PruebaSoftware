@@ -8,6 +8,8 @@ class VueloApplicationTests {
 
     @Test
     void contextLoads() {
+
+        
     }
 
 }
