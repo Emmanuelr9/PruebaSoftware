@@ -22,7 +22,10 @@ jobs:
           node-version: '21.7.1'
 
       - name: Install dependencies
-        run: npm install
+        run: | 
+            cd Pruebas_App_Aerolinea/Front 
+            npm install
+            
 
       - name: Run SonarCloud analysis
         run: |
