@@ -29,7 +29,6 @@ jobs:
 
       - name: Run SonarCloud analysis
         run: |
-            cd Pruebas_App_Aerolinea/Front
             npm run sonarcloud \
                 -Dsonar.projectKey=TaliaPalacio_Prueba_Consulta_Vuelo \
                 -Dsonar.organization=taliapalacio \
