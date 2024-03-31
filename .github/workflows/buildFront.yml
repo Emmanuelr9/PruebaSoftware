@@ -30,6 +30,10 @@ jobs:
       - name: Run SonarCloud analysis
         run: |
             cd Pruebas_App_Aerolinea/Front
+            curl -X POST \
+            -u "${{ secrets.SONAR_TOKEN }}:" \
+            "https://sonarcloud.io/api/settings/set?key=TaliaPalacio_Prueba_Consulta_Vuelo:sonar.python.file.suffixes&value="
+
             npm run sonarcloud \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.projectKey=TaliaPalacio_Prueba_Consulta_Vuelo \
