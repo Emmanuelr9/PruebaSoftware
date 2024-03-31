@@ -31,9 +31,10 @@ jobs:
         run: |
             cd Pruebas_App_Aerolinea/Front
             npm run sonarcloud \
+            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
             -Dsonar.projectKey=TaliaPalacio_Prueba_Consulta_Vuelo \
             -Dsonar.organization=taliapalacio \
             -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.login=${{ secrets.SONAR_TOKEN }}
+            
             
        
